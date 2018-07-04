@@ -1,5 +1,5 @@
 // @flow
-import type { counterStateType } from '../reducers/counter';
+import type { counterStateType } from './Counter.actions';
 
 type actionType = {
   +type: string
