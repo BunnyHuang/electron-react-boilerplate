@@ -1,5 +1,5 @@
 import { spy } from 'sinon';
-import * as actions from '../../app/pages/counter/Counter.actions';
+import * as actions from '../Counter.actions';
 
 describe('actions', () => {
   it('should increment should create increment action', () => {
