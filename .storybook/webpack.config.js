@@ -1,18 +1,54 @@
-// you can use this file to add your custom webpack plugins, loaders and anything you like.
-// This is just the basic way to add additional webpack configurations.
-// For more information refer the docs: https://storybook.js.org/configurations/custom-webpack-config
-
-// IMPORTANT
-// When you add this file, we won't add the default configurations which is similar
-// to "React Create App". This only has babel loader to load JavaScript.
+const path = require('path');
 
 module.exports = {
-  plugins: [
-    // your custom plugins
-  ],
+  devtool: 'inline-cheap-module-source-map',
   module: {
     rules: [
-      // add your custom rules.
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|)$/,
+        loader: 'url-loader?limit=3000',
+        query: {
+          name: 'images/[name].[ext]'
+        }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+        query: {
+          name: 'fonts/[name].[ext]'
+        }
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000',
+        query: {
+          name: 'fonts/[name].[ext]'
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      }
     ]
   }
 };
