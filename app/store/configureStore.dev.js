@@ -7,9 +7,10 @@ import rootReducer from '../pages/home/Home.reducers';
 import * as counterActions from '../pages/counter/Counter.actions';
 import type { counterStateType } from '../pages/counter/Counter.reducers';
 
-const history = createHashHistory();
+export const history = createHashHistory();
 
-const configureStore = (initialState?: counterStateType) => {
+export const configureStore = (initialState?: counterStateType) => {
+
   // Redux Configuration
   const middleware = [];
   const enhancers = [];
@@ -64,4 +65,4 @@ const configureStore = (initialState?: counterStateType) => {
   return store;
 };
 
-export default { configureStore, history };
+// export default { configureStore, history };
