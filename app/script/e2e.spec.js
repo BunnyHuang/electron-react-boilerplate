@@ -13,6 +13,9 @@ describe('main window', function spec() {
       args: [path.join(__dirname, '..', '..', 'app')]
     });
 
+    console.log('===============')
+    console.log(this.app.args);
+
     return this.app.start();
   });
 

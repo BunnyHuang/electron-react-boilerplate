@@ -3,7 +3,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router'
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import { configureStore } from "../../store/configureStore";
+import { configureStore } from "../store/configureStore";
 import { storiesOf } from '@storybook/react';
 import type { counterStateType } from './Counter.reducers';
 import Counter from "./Counter";
