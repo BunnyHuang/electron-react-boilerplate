@@ -1,7 +1,7 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router'
 import Home from "./Home.js";
-import HomePage from "./Home.page";
+import HomePage from "./";
 import { storiesOf } from '@storybook/react';
 
 storiesOf('Home', module)

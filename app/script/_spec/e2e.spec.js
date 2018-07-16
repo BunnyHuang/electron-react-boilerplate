@@ -10,11 +10,8 @@ describe('main window', function spec() {
   beforeAll(async () => {
     this.app = new Application({
       path: electronPath,
-      args: [path.join(__dirname, '..', '..', 'app')]
+      args: [path.join(__dirname, '..', '..', '..', 'app')]
     });
-
-    console.log('===============')
-    console.log(this.app.args);
 
     return this.app.start();
   });

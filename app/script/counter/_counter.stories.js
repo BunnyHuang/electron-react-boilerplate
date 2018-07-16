@@ -7,7 +7,7 @@ import { configureStore } from "../store/configureStore";
 import { storiesOf } from '@storybook/react';
 import type { counterStateType } from './Counter.reducers';
 import Counter from "./Counter";
-import CounterPage from "./Counter.page";
+import CounterPage from "./";
 
 const store = configureStore();
 

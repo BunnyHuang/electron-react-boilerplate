@@ -4,7 +4,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import { ConnectedRouter } from 'react-router-redux';
-import CounterPage from '../Counter.page';
+import CounterPage from '../';
 import { configureStore } from '../../store/configureStore';
 
 Enzyme.configure({ adapter: new Adapter() });
