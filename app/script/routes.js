@@ -4,12 +4,14 @@ import { Switch, Route } from 'react-router';
 import App from './App';
 import HomePage from './home';
 import CounterPage from './counter';
+import LoginPage from './login';
 import TodoListPage from './todoList';
 
 export default () => (
   <App>
     <Switch>
       <Route path="/todoList" component={TodoListPage} />
+      <Route path="/login" component={LoginPage} />
       <Route path="/counter" component={CounterPage} />
       <Route path="/" component={HomePage} />
     </Switch>
