@@ -1,5 +1,6 @@
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import React from 'react';
+import '../app/scss/app.global.scss';
 
 //set global layout
 const globalWrapDecorator = sotryFn => {

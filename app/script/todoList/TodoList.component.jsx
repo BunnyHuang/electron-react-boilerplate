@@ -105,8 +105,8 @@ class TodoFilter extends React.Component {
 TodoItem.defaultProps = {
     item: {
         id: 1,
-        text: "test",
-        createDate: moment().format("YYYY-MM-DD  HH:mm:ss"),
+        text: 'test',
+        createDate: moment().format('YYYY-MM-DD  HH:mm:ss'),
         isCompleted: false
     }
 };

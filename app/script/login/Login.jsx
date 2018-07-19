@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from "classnames"
 import styles from '../../scss/Counter.scss';
 
-class Login extends React.Component {
+class Login extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,6 +34,7 @@ class Login extends React.Component {
                     </div>
                     <div>
                         <input
+                            name="email"
                             className="form-control ml"
                             onBlur={this.verifyEmail}
                             ref={input => (this.inputEmail = input)}
@@ -67,13 +68,8 @@ class Login extends React.Component {
                         </button>
                     </div>
                 </div>
-                <div className={styles.backButton} data-tid="backButton">
-                    <Link to="/">
-                        <i className="fa fa-arrow-left fa-3x" />
-                    </Link>
-                </div>
             </div>
-        );
+        )
     }
 }
 

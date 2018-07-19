@@ -1,0 +1,21 @@
+.week {
+    display: flex;
+}
+
+.selected {
+    color: red;
+    border-width: 1px;
+    border-style: solid;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+}
+
+.unselected {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import moment from "moment";
+import moment from 'moment';
 import { TodoItem, TodoFilter } from './TodoList.component';
 import styles from '../../scss/Counter.scss';
 
@@ -19,17 +19,17 @@ class TodoList extends React.Component {
     }
 
     filterTypeEnum = {
-        all: "all",
-        complete: "complete",
-        incomplete: "incomplete"
+        all: 'all',
+        complete: 'complete',
+        incomplete: 'incomplete'
     };
 
     handleAdd = event => {
-        if (this.inputItem.value !== "") {
+        if (this.inputItem.value !== '') {
             let item = {
                 id: this.state.itemsIndex,
                 text: this.inputItem.value,
-                createDate: moment().format("YYYY-MM-DD HH:mm:ss"),
+                createDate: moment().format('YYYY-MM-DD HH:mm:ss'),
                 isCompleted: false
             };
 
@@ -38,7 +38,7 @@ class TodoList extends React.Component {
 
             this.setState({ items: items });
             this.setState({ itemsIndex: this.state.itemsIndex + 1 });
-            this.inputItem.value = "";
+            this.inputItem.value = '';
         }
     };
 
