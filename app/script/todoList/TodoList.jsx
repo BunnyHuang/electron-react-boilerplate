@@ -80,7 +80,7 @@ class TodoList extends React.Component {
 
         return (
             <div className="container todos">
-                <h2>我的待辦清單</h2>
+                <h3>我的待辦清單</h3>
                 <input
                     type="text"
                     className="form-control"

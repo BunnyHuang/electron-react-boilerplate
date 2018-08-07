@@ -37,7 +37,7 @@ class TodoItem extends React.PureComponent {
                         onClick={() => this.handleDelete(this.props.item.id)}
                     >
                         delete
-          </button>
+                    </button>
                 </div>
             </div>
         );

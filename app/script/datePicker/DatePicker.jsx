@@ -48,7 +48,8 @@ class DatePicker extends React.Component {
                     startDate={this.state.startDate}
                     endDate={this.state.endDate}
                 />
-                {this.state.calendarActive &&
+                {
+                    this.state.calendarActive &&
                     <SelectDate
                         firstMonth={this.state.firstMonth}
                         startDate={this.state.startDate}
